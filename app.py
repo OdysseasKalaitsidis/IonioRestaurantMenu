@@ -58,4 +58,4 @@ def get_pdf():
     return jsonify({"error": "No PDF found"}), 404
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=False, host="0.0.0.0", port=int(os.getenv("PORT", 5000)))
