@@ -17,9 +17,9 @@ export default function MenuDisplay() {
       "friday",
       "saturday",
     ];
-    const today = "17-03";
-    const dayOfWeek = "Monday";
-    setCurrentDay("Monday");
+    const today = new Date();
+    const dayOfWeek = days[today.getDay()];
+    setCurrentDay(dayOfWeek);
 
     // Fetch menu data from the API
     const fetchMenuData = async () => {
