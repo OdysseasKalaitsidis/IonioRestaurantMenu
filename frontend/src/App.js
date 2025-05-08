@@ -1,6 +1,5 @@
 import React from "react";
 import MenuDisplay from "./components/MenuDisplay";
-import Display from "./components/Display";
 
 function App() {
   return (
